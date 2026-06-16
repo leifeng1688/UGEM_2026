@@ -215,6 +215,7 @@
   .nextstep{display:flex;gap:1.1rem;align-items:center;background:var(--safe-tint);border-radius:18px;padding:1.5rem 1.7rem;margin-top:2.2rem;font-size:clamp(1rem,2.3vw,1.2rem);font-weight:700}
   .nextstep svg{width:32px;height:32px;fill:var(--safe);flex:none}
   .nextstep .hl{color:var(--safe)}
+  .signoff{margin-top:2.2rem;color:var(--muted);font-size:clamp(1.02rem,2.2vw,1.2rem)}
   footer{padding:2.6rem 0;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:.82rem;letter-spacing:.08em}
 </style>
 </head>
@@ -255,7 +256,7 @@
     <h2 class="reveal">一個看起來再平常不過的早晨</h2>
     <div class="scene-row reveal d1">
       <div class="scene-ico"><svg viewBox="0 0 512 512"><path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 80.9V400H48V144.9l176 132c9.4 7 22.2 7 31.6 0l176-132zM256 240L48 96h416L256 240z"/></svg></div>
-      <p>早上九點，客服打開信箱，幾百封信等著。一封看起來是熟悉供應商寄來的對帳通知，附了一個連結。她點了。畫面閃了一下，沒事——她繼續處理今天的訂單。</p>
+      <p>早上九點，客服打開信箱，幾百封信等著。<br>一封看起來是熟悉供應商寄來的對帳通知，附了一個連結。<br>她點了。畫面閃了一下，沒事——她繼續處理今天的訂單。</p>
     </div>
     <div class="pull reveal d2">那一下「沒事」，<span class="hl">可能是公司今年最貴的一次點擊。</span></div>
   </div>
@@ -289,15 +290,16 @@
   <div class="wrap">
     <span class="eyebrow reveal">在談怎麼防之前</span>
     <h2 class="reveal">攻擊很少是一個瞬間，它是一條路徑</h2>
-    <p class="lead reveal d1 muted">它常常從一封信開始，靠一次點擊往前走，最後撞向對外開著的那扇門。每一步，都是一次可以攔下它的機會。</p>
     <div class="path reveal d2">
-      <div class="node"><div class="circle"><svg viewBox="0 0 512 512"><path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 80.9V400H48V144.9l176 132c9.4 7 22.2 7 31.6 0l176-132zM256 240L48 96h416L256 240z"/></svg></div><div class="nlabel">從一封信開始</div></div>
+      <div class="node"><div class="circle"><svg viewBox="0 0 512 512"><path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 80.9V400H48V144.9l176 132c9.4 7 22.2 7 31.6 0l176-132zM256 240L48 96h416L256 240z"/></svg></div><div class="nlabel">從一封信<br>一個受駭網站的連結<br>一個被駭客污染的廣告
+<br>開始</div></div>
       <div class="arrow"><svg viewBox="0 0 448 512"><path d="M438.6 278.6l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L338.8 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h306.8L233.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3z"/></svg></div>
-      <div class="node"><div class="circle"><svg viewBox="0 0 384 512"><path d="M0 55.2V426c0 12.2 9.9 22 22 22 6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320H297c12.2 0 22-9.9 22-22 0-6.3-2.7-12.4-7.5-16.6L38.6 38.7C34.3 33.9 28.2 31.2 22 31.2 9.9 31.2 0 41.1 0 53.3z"/></svg></div><div class="nlabel">靠一次點擊往前</div></div>
+      <div class="node"><div class="circle"><svg viewBox="0 0 384 512"><path d="M0 55.2V426c0 12.2 9.9 22 22 22 6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320H297c12.2 0 22-9.9 22-22 0-6.3-2.7-12.4-7.5-16.6L38.6 38.7C34.3 33.9 28.2 31.2 22 31.2 9.9 31.2 0 41.1 0 53.3z"/></svg></div><div class="nlabel">靠一次點擊<br>一次不經意的網頁瀏覽
+<br>往前</div></div>
       <div class="arrow"><svg viewBox="0 0 448 512"><path d="M438.6 278.6l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L338.8 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h306.8L233.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3z"/></svg></div>
       <div class="node"><div class="circle"><svg viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm165.5 135.5h-62.8c-5.6-32.7-15.3-61.2-27.9-82.3 38.8 16.6 70.5 47.1 90.7 82.3zM248 56c17.8 0 45.2 33.6 56.5 96h-113C202.8 89.6 230.2 56 248 56zM48 256c0-13.7 1.4-27.1 4-40h74.3c-1.2 13-1.9 26.4-1.9 40s.7 27 1.9 40H52c-2.6-12.9-4-26.3-4-40zm20.5 88.5h62.8c5.6 32.7 15.3 61.2 27.9 82.3-38.8-16.6-70.5-47.1-90.7-82.3zM248 456c-17.8 0-45.2-33.6-56.5-96h113C293.2 422.4 265.8 456 248 456zm66.3-144H181.7c-1.4-12.9-2.2-26.3-2.2-40s.8-27.1 2.2-40h132.6c1.4 12.9 2.2 26.3 2.2 40s-.8 27.1-2.2 40z"/></svg></div><div class="nlabel">撞向對外的門</div></div>
     </div>
-    <div class="pull gold reveal" style="margin-top:2.6rem;font-size:clamp(1.1rem,2.6vw,1.5rem)"><span class="hl">接下來，</span>我們沿著這條路徑，一步一步把它補起來。</div>
+    <div class="pull gold reveal" style="margin-top:2.6rem;font-size:clamp(1.1rem,2.6vw,1.5rem);text-align:center;"><span class="hl">每一步，都是一次可以攔下它的機會。</span><br>接下來，我們沿著這條路徑，一步一步把它補起來。</div>
   </div>
 </section>
 
@@ -313,7 +315,7 @@
       </div>
       <div class="pcard reveal d2">
         <div class="ph"><span class="ico"><svg viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"/></svg></span><b>真的，被擋掉</b></div>
-        <p>而當規則調得夠嚴、足以擋下這種假信，真客戶的急單也會被一起掃進垃圾匣——等發現，訂單早就跑去別家了。</p>
+        <p>而當規則調得夠嚴、足以擋下這種假信，真客戶的急單也會被一起掃進垃圾匣——等發現，訂單可能就沒了！</p>
       </div>
     </div>
 
@@ -342,7 +344,7 @@
   <div class="wrap">
     <div class="badge reveal"><span class="num">貳</span><span class="btxt">第二道防線　點擊之後</span></div>
     <h2 class="reveal">再小心的人，也會有點錯的一天</h2>
-    <p class="lead reveal d1"><p>沒有百分之百的防禦，能做的是盡可能守護。</p><p>當同仁真的點了那個看起來像供應商的連結——</p><p>接下來會發生什麼，跟他點得多用力無關，跟「他的電腦接下來連到哪裡」有關。</p></p>
+    <p class="lead reveal d1">沒有百分之百的防禦，能做的是盡可能守護。<br>當同仁真的點了那個看起來像供應商的連結——<br>接下來會發生什麼，跟他點得多用力無關，跟「他的電腦接下來連到哪裡」有關。</p>
     <div class="pull reveal d2">所以真正該被攔住的，<span class="hl">不是人，是那一條連線。</span></div>
 
     <div class="solve reveal" style="margin-top:2.8rem">
@@ -375,7 +377,7 @@
 
     <p class="eyebrow reveal" style="margin-top:3rem">為什麼這一步對永準特別重要</p>
     <h2 class="reveal" style="font-size:clamp(1.5rem,4vw,2.2rem)">對永準，資料外洩不是技術新聞，是頭條新聞</h2>
-    <p class="lead reveal d1" style="max-width:60ch">別家公司外洩的是 email；<p></p>但是對永準可能演變成：「<b style="color:var(--threat)">誰、買了哪一款親密用品、上傳了什麼照片</b>」。</p><p>這將傷害到永準給客戶的那份信任——隱私。</p>
+    <p class="lead reveal d1" style="max-width:60ch">別家公司外洩的是 email；<br>但是對永準可能演變成：「<b style="color:var(--threat)">誰、買了哪一款親密用品、上傳了什麼照片</b>」。<br>這將傷害到永準給客戶的那份信任——隱私。</p>
     <div class="contrast">
       <div class="cblock ok reveal d1">
         <div class="ic"><svg viewBox="0 0 512 512"><path d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"/></svg></div>
@@ -415,7 +417,7 @@
   <div class="wrap">
     <span class="eyebrow reveal">為什麼是現在</span>
     <h2 class="reveal">這些工具不是新的，新的是敵人</h2>
-    <p class="lead reveal d1" style="max-width:64ch">DNS-Filter、WAF 這類防護，業界用了很多年。之所以到現在才提，不是因為產品變了，而是這一兩年，<b style="color:var(--gold)">AI 把攻擊整個改寫了</b>。</p>
+    <p class="lead reveal d1" style="max-width:64ch">DNS-Filter、WAF 這類防護，業界用了很多年。<br>之所以到現在才提，不是因為產品變了，而是這一兩年，<b style="color:var(--gold)">AI 把攻擊整個改寫了</b>。</p>
     <div class="three">
       <div class="pcard reveal d1">
         <div class="ph"><span class="ico"><svg viewBox="0 0 640 512"><path d="M32 224h32v160H32c-17.7 0-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm512-48v272c0 26.5-21.5 48-48 48H144c-26.5 0-48-21.5-48-48V176c0-44.1 35.9-80 80-80h80V32c0-17.7 14.3-32 32-32s32 14.3 32 32v64h80c44.1 0 80 35.9 80 80zM264 256c0-22.1-17.9-40-40-40s-40 17.9-40 40 17.9 40 40 40 40-17.9 40-40zm192 0c0-22.1-17.9-40-40-40s-40 17.9-40 40 17.9 40 40 40 40-17.9 40-40zm128-32h-32v160h32c17.7 0 32-14.3 32-32V256c0-17.7-14.3-32-32-32z"/></svg></span><b>釣魚信變「真」了</b></div>
@@ -443,29 +445,30 @@
         <div><div class="tag">現在 · 它已經是</div><div class="big">地基</div></div>
       </div>
     </div>
-    <div class="stance reveal" style="margin-top:1.6rem">先動，不是因為我們想賣什麼，是因為攻擊的門檻正在快速降低。　<span class="hl">等出事再補，代價只會更高。</span></div>
+    <div class="stance reveal" style="margin-top:1.6rem;text-align:center;">攻擊的門檻正在快速降低。<br><span class="hl">等出事再補，代價只會更高。</span></div>
   </div>
 </section>
 
 <!-- PEOPLE -->
-<section class="band" id="cost">
+<section class="band" id="people">
   <div class="wrap">
     <span class="eyebrow reveal">也別忘了第一線</span>
     <h2 class="reveal">這同時是公司替第一線同仁撐的一把傘</h2>
     <div class="scene-row reveal d1">
       <div class="scene-ico" style="background:var(--safe-tint)"><svg viewBox="0 0 576 512" style="fill:var(--safe)"><path d="M575.7 280.8C547.1 144.5 437.3 62.6 320 49.9V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v17.9C138.7 62.6 28.9 144.5.3 280.8c-2.2 10.1 8.5 17.3 17.3 11.6C73.1 256 151.8 224 288 224s214.9 32 270.4 68.5c8.8 5.6 19.5-1.6 17.3-11.7zM288 320c-10.8 0-26.4-2.2-41.4-4.4-32.2-4.7-58.6 26-58.6 58.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32v-90.7c0-2.3 2.2-4 4.5-3.5 15.6 3 31.9 5.7 31.5 5.7s16-2.7 31.5-5.7c2.3-.4 4.5 1.2 4.5 3.5V480c0 17.7 14.3 32 32 32s32-14.3 32-32v-105.8c0-32.6-26.4-63.3-58.6-58.6-15 2.2-30.6 4.4-41.4 4.4z"/></svg></div>
-      <p>資安做得好，同仁就不必活在「我會不會害到公司」的壓力下。點錯一個連結，不該毀掉一個人的職涯——系統先把風險擋住，人才敢放手做事。對外，這是保護客戶；對內，這是讓同仁知道：公司有把他們放進考量裡。</p>
+      <p>資安做得好，同仁就不必活在「我會不會害到公司」的壓力下。<br>點錯一個連結，不該毀掉一個人的職涯——系統先把風險擋住，人才敢放手做事。<br>對外，這是保護客戶；<br>對內，這是讓同仁知道：公司有把他們放進考量裡。</p>
     </div>
     <div class="pull gold reveal d2"><span class="hl">願意把風險扛在員工前面的公司，留得住人，也讓人願意拚。</span></div>
   </div>
 </section>
 
 <!-- CLOSE -->
-<section id="people">
+<section id="close">
   <div class="wrap">
     <span class="eyebrow reveal">結語</span>
     <h2 class="reveal">把信任，守成永準最難被複製的優勢</h2>
-    <p class="lead reveal d1" style="max-width:62ch">永準花了四十多年，從引進台灣第一批彩色沖印設備，走到今天橫跨影像與智能健康的品牌版圖，靠的一直是客戶的信任。這三道防線要做的，就是守住這份信任，不讓它在一次點擊、一次闖入裡崩掉。</p>
+    <p class="lead reveal d1" style="max-width:62ch">永準花了四十多年，從引進台灣第一批彩色沖印設備，走到今天橫跨影像與智能健康的品牌版圖，靠的一直是客戶的信任。<br>這三道防線要做的，就是守住這份信任，不讓它在一次點擊、一次闖入裡崩掉。</p>
+    <p class="signoff reveal d2">想更深入了解哪一部分，讓我們會議上一起討論。</p>
   </div>
 </section>
 
